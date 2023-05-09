@@ -1,0 +1,49 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="MedInc">Median Income:</label>
+        <input type="text" id="MedInc" name="MedInc" placeholder="Enter median income value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="HouseAge">Median House Age:</label>
+        <input type="text" id="HouseAge" name="HouseAge" placeholder="Enter median house age value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="AveRooms">No. of rooms per household:</label>
+        <input type="text" id="AveRooms" name="AveRooms" placeholder="Enter  average number of rooms per household value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="AveBedrms">Avg. no. of bedrooms per household:</label>
+        <input type="text" id="AveBedrms" name="AveBedrms" placeholder="Enter average number of bedrooms per household value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Population">Population:</label>
+        <input type="text" id="Population" name="Population" placeholder="Enter block group population value (float)">
+    </div>
+ 
+    <div class="form-group">
+        <label for="AveOccup">Avg. no. of household members:</label>
+        <input type="text" id="AveOccup" name="AveOccup" placeholder="Enter average number of household members value (float)">
+    </div>         
+
+    <div class="form-group">
+      <label for="Latitude">Latitude:</label>
+      <input type="text" id="Latitude" name="Latitude" placeholder="Enter Latitude value (float)">
+  </div>
+
+  <div class="form-group">
+      <label for="Longitude">Longitude:</label>
+      <input type="text" id="Longitude" name="Longitude" placeholder="Enter Longitude value (float)">
+  </div> 
+
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
